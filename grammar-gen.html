@@ -1,0 +1,904 @@
+<title>COOGL Grammar</title>
+<PRE><FONT SIZE="3" FACE="Courier New"><B></B><I><FONT SIZE="3" FACE="Courier New">scope_global_declrtns</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">global_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">label_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDENT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">label_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">class_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">class_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">nsifc_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsifc_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">lit_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">lit_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">alias_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">alias_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">genre_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">genre_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">strfy</FONT></I><B>
+	# </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">reg_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">cont_declrtn</FONT></I><B>
+	continue </B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">nsext_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_nsifc_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">nsifc_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_lit_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">lit_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_typ_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_class_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">class_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_stclass_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> static </B><I><FONT SIZE="3" FACE="Courier New">class_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_func_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">membr_func_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_funcclss_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">membr_funcclss_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_alias_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">alias_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_genre_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">genre_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	tuple [ </B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B> ]
+
+</B><I><FONT SIZE="3" FACE="Courier New">storage_spec</FONT></I><B>
+	static
+
+</B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_vital</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_require</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_promise</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_enum_values</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enum_values</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">class_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clssd</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">class_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">alias_declr</FONT></I><B>
+	alias </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">field_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_func_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">nested_aggr_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">aggr</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">scope_field_declrtns</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">scope_func_statmnts</FONT></I><B> }
+	</B><I><FONT SIZE="3" FACE="Courier New">return_statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">return_statmnt</FONT></I><B>
+	return </B><I><FONT SIZE="3" FACE="Courier New">opt_val</FONT></I><B> ;
+	return </B><I><FONT SIZE="3" FACE="Courier New">on_expr</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">nsext_body</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">scope_nsext_decls</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">clss_body</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">scope_clss_decls</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">ifc_body</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">scope_ifc_decls</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">on_expr</FONT></I><B>
+	on ( </B><I><FONT SIZE="3" FACE="Courier New">on_obj_list</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">field_use</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">arguments</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">array</FONT></I><B>
+	[ </B><I><FONT SIZE="3" FACE="Courier New">opt_array_size</FONT></I><B> ]
+
+</B><I><FONT SIZE="3" FACE="Courier New">pub_ql</FONT></I><B>
+	pub { </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr_list</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">prot_ql</FONT></I><B>
+	prot { </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr_list</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">lit_declr</FONT></I><B>
+	lit </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">lit_prm_declr</FONT></I><B>
+	lit </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">decl_declrtn</FONT></I><B>
+	decl </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">genre_declr</FONT></I><B>
+	genre </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">class_ref_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">fieldof_declr</FONT></I><B>
+	fieldof </B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">type_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">param_dir_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">class_ref_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_initlzr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">param_dir_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_initlzr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">aggr_typ_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">aggr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">scope_field_declrtns</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">class_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_paren_param_decls</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">class_ql</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">class_ql</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">ifc_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_paren_param_decls</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_ex</FONT></I><B> [ </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B> ]
+	</B><I><FONT SIZE="3" FACE="Courier New">field_ex</FONT></I><B> . </B><I><FONT SIZE="3" FACE="Courier New">field_use</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_specs</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+	: </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">abs_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_abs_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">dir_abs_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_val</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B>
+	class
+	preclass
+
+</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B>
+	raw * </B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B>
+	* </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typenwglb</FONT></I><B>
+	typenew
+	typeglob
+
+</B><I><FONT SIZE="3" FACE="Courier New">aggr</FONT></I><B>
+	struct
+	union
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+	.. </B><I><FONT SIZE="3" FACE="Courier New">typ_ref_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ref_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_ref_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ref_ex</FONT></I><B> . </B><I><FONT SIZE="3" FACE="Courier New">typ_field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_func_ptr_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">func_dir_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_acc_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_initlzr</FONT></I><B>
+	= </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_paren_param_decls</FONT></I><B>
+	( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_field_declrtns</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_func_statmnts</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">func_statmnt_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_nsext_decls</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_clss_decls</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_ifc_decls</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ifc_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_statmnts</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">statmnt_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">array_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_array_size</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_require</FONT></I><B>
+	require ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_promise</FONT></I><B>
+	promise ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_vital</FONT></I><B>
+	vital
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+	inline
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_useful_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">useful_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">str_lit_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">opt_deleg</FONT></I><B>
+	deleg
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">strfy</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">global_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">global_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">global_declrtn_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">global_decl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">param_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_declrtn_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">field_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">lit_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">statmnt_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">statmnt_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_statmnt_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">func_statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">func_statmnt_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">nsext_decl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">clss_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss_decl_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">clss_decl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">ifc_decl_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ifc_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ifc_decl_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">ifc_decl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">on_obj_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">on_obj_list</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">array_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">array</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">array_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">array</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">str_lit_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">STR_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">str_lit_list</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">STR_LIT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">loop_declrtn_specs</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">clssd</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> struct
+	abstract </B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B>
+	abstract </B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> struct
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">abs_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">loop_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">loop_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B>
+	decl </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_ptr_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">global_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">class_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">func_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">other_decl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B>
+	const
+	volatile
+	const volatile
+	volatile const
+
+</B><I><FONT SIZE="3" FACE="Courier New">init_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">on_expr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dclrtr</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">import_declrtn</FONT></I><B>
+	import </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	import </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">is_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> is </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> is </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">inhrt_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> inherit </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> inherit </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> inherit preclass </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> inherit preclass </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">nsifc_declr</FONT></I><B>
+	namespace </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">nsext_body</FONT></I><B>
+	interface </B><I><FONT SIZE="3" FACE="Courier New">ifc_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_require</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_promise</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">ifc_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B>
+	; </B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">arguments</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B>
+	; </B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">NOTHING</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mbifc_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">ext_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">import_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_func_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">cont_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">ifc_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mbifc_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">is_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_func_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_funcclss_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ext_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">clss_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">nsext_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">is_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">inhrt_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_funcclss_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">ext_declrtn</FONT></I><B>
+	extend namespace </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">nsext_body</FONT></I><B>
+	extend </B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">clss_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">mbifc_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_class_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_stclass_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_lit_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_typ_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_alias_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_nsifc_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_genre_declrtn</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">other_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">reg_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">lit_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">genre_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">nsifc_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">decl_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">alias_declrtn</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">declrtn_specs</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">storage_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">storage_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">storage_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">storage_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_dir_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enum_typ_declr</FONT></I><B>
+	typedef </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">tuple_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">aggr_typ_declr</FONT></I><B>
+	typedef </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr</FONT></I><B>
+	typedef </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typenwglb</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">type_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typenwglb</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> } </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typenwglb</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> } </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B>
+	pub
+	prot
+	priv
+	priv </B><I><FONT SIZE="3" FACE="Courier New">pub_ql</FONT></I><B>
+	priv </B><I><FONT SIZE="3" FACE="Courier New">pub_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">prot_ql</FONT></I><B>
+	pub ! inherit
+	prot </B><I><FONT SIZE="3" FACE="Courier New">pub_ql</FONT></I><B>
+	priv </B><I><FONT SIZE="3" FACE="Courier New">prot_ql</FONT></I><B>
+	priv </B><I><FONT SIZE="3" FACE="Courier New">prot_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">pub_ql</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">membr_funcclss_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> defer ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> redef defer ;
+	</B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> redef </B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+	loop </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_dclrtr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">func_body</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">dir_abs_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_abs_dclrtr</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B>
+	( </B><I><FONT SIZE="3" FACE="Courier New">abs_dclrtr</FONT></I><B> )
+	( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B>
+	[ </B><I><FONT SIZE="3" FACE="Courier New">opt_array_size</FONT></I><B> ]
+	</B><I><FONT SIZE="3" FACE="Courier New">dir_abs_dclrtr</FONT></I><B> [ </B><I><FONT SIZE="3" FACE="Courier New">opt_array_size</FONT></I><B> ]
+
+</B><I><FONT SIZE="3" FACE="Courier New">enum_typ_declr</FONT></I><B>
+	enum { </B><I><FONT SIZE="3" FACE="Courier New">enum_values</FONT></I><B> }
+	enum </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">enum_values</FONT></I><B> }
+	enum class </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">scope_enum_values</FONT></I><B> }
+	enum </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">enum_values</FONT></I><B> }
+	enum class </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">scope_enum_values</FONT></I><B> }
+
+</B><I><FONT SIZE="3" FACE="Courier New">func_ptr_dclrtr</FONT></I><B>
+	( </B><I><FONT SIZE="3" FACE="Courier New">ptr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ) ( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_deleg</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_func_ptr_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">declid</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">scope_param_declrtns</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_arrays</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_deleg</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">contract</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">genre_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">param_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">param_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">fieldof_declr</FONT></I><B>
+	decl </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">param_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">lit_prm_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">membr_declrtn_specs</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">param_dclrtr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">genre_declr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">acc_spec</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">fieldof_declr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">field_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_typ_ql</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">field_dclrtr_list</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">nested_aggr_declrtn</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">nested_aggr_declrtn</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">legc_dclrtr_list</FONT></I><B> ;
+
+</B><I><FONT SIZE="3" FACE="Courier New">enum_values</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn_list</FONT></I><B> ,
+	</B><I><FONT SIZE="3" FACE="Courier New">enval_declrtn_list</FONT></I><B> , ...
+
+</B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">cond_ex</FONT></I><B>
+	[ </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B> ] </B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr</FONT></I><B>
+	. </B><I><FONT SIZE="3" FACE="Courier New">field_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+	[ </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B> ] = </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnts</FONT></I><B> }
+	</B><I><FONT SIZE="3" FACE="Courier New">other_decl</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_useful_ex</FONT></I><B> ;
+	</B><I><FONT SIZE="3" FACE="Courier New">return_statmnt</FONT></I><B>
+	continue </B><I><FONT SIZE="3" FACE="Courier New">opt_val</FONT></I><B> ;
+	break ;
+	goto </B><I><FONT SIZE="3" FACE="Courier New">label_use</FONT></I><B> ;
+	default : </B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">label_declrtn</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+	while ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">on_expr</FONT></I><B> ;
+	case </B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">statmnt</FONT></I><B>
+	switch ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	...
+	</B><I><FONT SIZE="3" FACE="Courier New">scope_iterative_statmnt</FONT></I><B>
+	if ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	do </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B> while ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ) ;
+	if ( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B> else </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">scope_iterative_statmnt</FONT></I><B>
+	for ( </B><I><FONT SIZE="3" FACE="Courier New">for_init_ex</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">opt_ex</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">opt_useful_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	loop ( </B><I><FONT SIZE="3" FACE="Courier New">loop_init_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+	loop ( </B><I><FONT SIZE="3" FACE="Courier New">loop_init_ex</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">for_init_ex</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">opt_ex</FONT></I><B> ; </B><I><FONT SIZE="3" FACE="Courier New">opt_useful_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">scope_statmnt</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_pri_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> . </B><I><FONT SIZE="3" FACE="Courier New">typ_field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> -> </B><I><FONT SIZE="3" FACE="Courier New">typ_field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> [ </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> ]
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">arguments</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B>
+	{ </B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr_list</FONT></I><B> }
+	{ </B><I><FONT SIZE="3" FACE="Courier New">comp_initlzr_list</FONT></I><B> , }
+
+</B><I><FONT SIZE="3" FACE="Courier New">loop_init_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">loop_declrtn</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">typ_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">for_init_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">opt_useful_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">reg_declrtn</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">decl_declrtn</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ_pri_ex</FONT></I><B>
+	( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+	.. </B><I><FONT SIZE="3" FACE="Courier New">typ_use</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">useful_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">useful_asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">useful_ex</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">useful_asgn_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">useful_asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">useful_unr_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">actual_asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">on_expr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">useful_unr_ex</FONT></I><B>
+	++ </B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	-- </B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">useful_pst_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">useful_pst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> ++
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> --
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">arguments</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">const_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">cond_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B>
+	[ </B><I><FONT SIZE="3" FACE="Courier New">arg_ex_list</FONT></I><B> ]
+
+</B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">cond_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">actual_asgn_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">cond_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">or_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">or_ex</FONT></I><B> ? </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">cond_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">or_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">and_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">or_ex</FONT></I><B> || </B><I><FONT SIZE="3" FACE="Courier New">and_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">and_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_or_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">and_ex</FONT></I><B> && </B><I><FONT SIZE="3" FACE="Courier New">bit_or_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">bit_or_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_xor_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_or_ex</FONT></I><B> | </B><I><FONT SIZE="3" FACE="Courier New">bit_xor_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">bit_xor_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_and_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_xor_ex</FONT></I><B> ^ </B><I><FONT SIZE="3" FACE="Courier New">bit_and_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">bit_and_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">eq_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">bit_and_ex</FONT></I><B> & </B><I><FONT SIZE="3" FACE="Courier New">eq_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">eq_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">eq_ex</FONT></I><B> == </B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">eq_ex</FONT></I><B> != </B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B> << </B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B> >> </B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dim_pri</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> * </B><I><FONT SIZE="3" FACE="Courier New">dim_pri</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> / </B><I><FONT SIZE="3" FACE="Courier New">dim_pri</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">dim_pri</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B> ` </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> }
+	( </B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">typ_dot_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">actual_asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> *= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> /= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> %= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?*= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?/= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?%= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> += </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> -= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> <<= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?+= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ?-= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> >>= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> &= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> ^= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> |= </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">tup_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B> = </B><I><FONT SIZE="3" FACE="Courier New">clss</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B> < </B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B> > </B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B> <= </B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">rel_ex</FONT></I><B> >= </B><I><FONT SIZE="3" FACE="Courier New">shf_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B> + </B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B> - </B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B> ?+ </B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">add_ex</FONT></I><B> ?- </B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> * </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> / </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> % </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> ?* </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> ?/ </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">mlt_ex</FONT></I><B> ?% </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	unsafe_cast ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	cast ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	up_cast ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	uptr_cast ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	try_cast ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B> , </B><I><FONT SIZE="3" FACE="Courier New">arg_ex</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B>
+	++ </B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	-- </B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+	& </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	* </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	- </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	~ </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	! </B><I><FONT SIZE="3" FACE="Courier New">cst_ex</FONT></I><B>
+	sizeof ( </B><I><FONT SIZE="3" FACE="Courier New">typ_dclrtr</FONT></I><B> )
+	sizeofex </B><I><FONT SIZE="3" FACE="Courier New">unr_ex</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pri_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> ++
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> --
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> . </B><I><FONT SIZE="3" FACE="Courier New">field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> [ </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B> ]
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> [ </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B> : </B><I><FONT SIZE="3" FACE="Courier New">asgn_ex</FONT></I><B> ]
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> -> </B><I><FONT SIZE="3" FACE="Courier New">field_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">pst_ex</FONT></I><B> ( </B><I><FONT SIZE="3" FACE="Courier New">arguments</FONT></I><B> ) </B><I><FONT SIZE="3" FACE="Courier New">opt_inl</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">pri_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	^ </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	.. </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B> { </B><I><FONT SIZE="3" FACE="Courier New">dim_ex</FONT></I><B> }
+	</B><I><FONT SIZE="3" FACE="Courier New">typ</FONT></I><B>
+	( </B><I><FONT SIZE="3" FACE="Courier New">ex</FONT></I><B> )
+	</B><I><FONT SIZE="3" FACE="Courier New">strfy_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B> ` </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">strfy_ex</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">STR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">WSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">DSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">QSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">USTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">strfy_list</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">literal</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">INT_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">UINT_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">CHAR_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">STR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">LONG_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ULONG_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">WCHAR_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">WSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">LARGE_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ULARGE_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">DCHAR_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">DSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">LONGDOUBLE_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">ILONGDOUBLE_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">QCHAR_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">QSTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">FLOAT_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">DOUBLE_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">BOOL_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">USTR_LIT</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">opt_str_lits</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IFLOAT_LIT</FONT></I><B>
+	</B><I><FONT SIZE="3" FACE="Courier New">IDOUBLE_LIT</FONT></I><B>
+
+</B><I><FONT SIZE="3" FACE="Courier New">typ</FONT></I><B>
+	void
+	bool
+	char
+	schar
+	uchar
+	unic
+	uptr
+	size_t
+	ptrdiff
+	byte
+	short
+	int
+	long
+	large
+	index
+	float
+	imag
+	cplx
+	ubyte
+	ushort
+	uint
+	ulong
+	ularge
+	uindex
+	double
+	imagd
+	cplxd
+	</B><I><FONT SIZE="3" FACE="Courier New">aggr</FONT></I><B> </B><I><FONT SIZE="3" FACE="Courier New">id_use</FONT></I><B>
+</B></FONT></PRE>
